@@ -1,0 +1,56 @@
+{
+  "PO_#": "",
+  "Pro_#":"",
+  "Billing_terms": "",
+
+  "date_Day": "",
+  "date_Month": "",
+  "date_Year": "",
+  "Date":"",
+
+  "ship_Customer_#": "",
+  "ship_Name": "",
+  "ship_Address": "",
+  "ship_City": "",
+  "ship_Province": "",
+  "ship_Postal_code": "",
+
+  "receive_Customer_#": "",
+  "receive_Name": "",
+  "receive_Address": "",
+  "receive_City": "",
+  "receive_State": "",
+  "receive_Postal_code": "",
+
+  "bill_Customer_#": "",
+  "bill_Name": "",
+  "bill_Address": "",
+  "bill_City": "",
+  "bill_State": "",
+  "bill_Postal_code": "",
+
+  "skidList": [
+    {
+      "PIN_#": "",
+      "Length": "",
+      "Width": "",
+      "Height": "",
+      "BOL_weight": "",
+      "Cube_weight": ""
+    },
+    {
+      "PIN_#": "",
+      "Length": "",
+      "Width": "",
+      "Height": "",
+      "BOL_weight": "",
+      "Cube_weight": ""
+    }
+  ],
+  "Special_Instructions": "",
+  "Total_#_packages": "",
+  "customer_pin": "",
+  "customer_po": "",
+  "incoterm": "",
+  "Total_#_skids": ""
+}

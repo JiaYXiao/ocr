@@ -1,0 +1,12 @@
+img {
+  width: 200px;
+  padding: 10px;
+}
+.remove {
+  transform: translate(-112%, -60%);
+  border-width: thin;
+  border-style: solid;
+}
+body {
+  text-align: center;
+}

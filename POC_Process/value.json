@@ -1,0 +1,52 @@
+{
+  "proNum": "1234",
+  "date_day": "28",
+  "date_month": "02",
+  "date_year": "2018",
+  "ship_name": "Bob",
+  "ship_address": "123 abc dr",
+  "ship_city": "city",
+  "ship_state": "ON",
+  "ship_zip": "A1B 2C3",
+  "recieve_name": "Bobette",
+  "recieve_address": "321 cba ave",
+  "recieve_city": "city",
+  "recieve_state": "ON",
+  "recieve_zip": "Z9Y 8X7",
+  "bill_name": "",
+  "bill_address": "",
+  "bill_city": "",
+  "bill_state": "",
+  "bill_zip": "",
+  "bill_term": "collect",
+  "bill_acc": "987651321",
+  "scale_name": "bobb",
+  "scale_date_month": "02",
+  "scale_date_day": "14",
+  "scale_date_year": "2017",
+  "skidList": [
+    {
+      "pin": "123456",
+      "scale_length": "0",
+      "scale_width": "0",
+      "scale_height": "0",
+      "scale_weight_bol": "0",
+      "scale_weight_rescale": "0"
+    },
+    {
+      "pin": "654321",
+      "scale_length": "1",
+      "scale_width": "1",
+      "scale_height": "1",
+      "scale_weight_bol": "1",
+      "scale_weight_rescale": "1"
+    }
+  ],
+  "appointment": "No",
+  "instruction": "n/a\n\n\nyeet",
+  "totalPackage": "81",
+  "customer_pin": "000000",
+  "customer_po": "000",
+  "incoterm": "????",
+  "totalSkid": "2"
+}

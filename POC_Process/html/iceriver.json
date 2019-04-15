@@ -1,0 +1,52 @@
+{
+  "proNum": "0545501810",
+  "date_day": "18",
+  "date_month": "12",
+  "date_year": "2018",
+  "ship_name": "Calgary",
+  "ship_address": "",
+  "ship_city": "",
+  "ship_state": "",
+  "ship_zip": "T2C 2E1",
+  "recieve_name": "BLUJAY SOLUTIONS INC",
+  "recieve_address": "",
+  "recieve_city": "",
+  "recieve_state": "",
+  "recieve_zip": "",
+  "bill_name": "Direct Ship Department",
+  "bill_address": "Burlington Postal Stn, Burlington ON, L7R OC1",
+  "bill_city": "",
+  "bill_state": "",
+  "bill_zip": "",
+  "bill_term": "",
+  "bill_acc": "",
+  "scale_name": "",
+  "scale_date_month": "",
+  "scale_date_day": "",
+  "scale_date_year": "",
+  "skidList": [
+    {
+      "pin": "",
+      "scale_length": "0",
+      "scale_width": "0",
+      "scale_height": "0",
+      "scale_weight_bol": "2,189.208",
+      "scale_weight_rescale": "0"
+    },
+    {
+      "pin": "",
+      "scale_length": "0",
+      "scale_width": "0",
+      "scale_height": "0",
+      "scale_weight_bol": "0",
+      "scale_weight_rescale": "0"
+    }
+  ],
+  "appointment": "",
+  "instruction": "",
+  "totalPackage": "",
+  "customer_pin": "200048",
+  "customer_po": "0545501810",
+  "incoterm": "CPU (COLLECT / FOB)",
+  "totalSkid": "2"
+}

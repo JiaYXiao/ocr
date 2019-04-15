@@ -1,0 +1,60 @@
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+* {
+	background-color: #fcfcfc;
+	font-family: 'Open Sans', sans-serif;
+}
+#selectList {
+	margin-top: 10px;
+}
+#div_2,#div_3 {
+	display:inline-block
+}
+/* keeps the form all on the right side of the page */
+#form {
+	margin-left: 40%;
+}
+#pic-box{
+	float: left;
+	text-align: center;
+	margin-left: 50px;
+}
+#inside-pic {
+	width: 400px;
+	padding: 10px;
+}
+button, #getFilesLabel {
+	/*border: solid;
+	border-width: thin;
+	padding: 2px;*/
+	border: solid;
+	border-width: thin;
+	border-color: #c6c6c6;
+	background-color: #f0f0f0;
+	padding: 2px;
+}
+#submitBtn, #newSkidBtn {
+	font-size: 1em;
+	margin-right: 5px;
+	margin-top: 2px;
+}
+#getFiles {
+	display:none;
+}
+input[type=text], select, textarea {
+  border: 1px solid #ccc;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+textarea {
+	width: 100%;
+}
+th {
+	text-align: left;
+}
+@media screen and (max-width: 1004px) {
+  #form {
+		margin-left: 0%;
+	}
+}

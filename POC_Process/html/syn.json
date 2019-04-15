@@ -1,0 +1,52 @@
+{
+  "proNum": "",
+  "date_day": "28",
+  "date_month": "",
+  "date_year": "",
+  "ship_name": "",
+  "ship_address": "9300, VAN HORNE WAY",
+  "ship_city": "RICHMOND",
+  "ship_state": "",
+  "ship_zip": "",
+  "recieve_name": "",
+  "recieve_address": "",
+  "recieve_city": "BURLINGTON",
+  "recieve_state": "ONTARIO",
+  "recieve_zip": "Z9Y 8X7",
+  "bill_name": "CTC FINANCE SHARED SERVICES - FREIGHT PA",
+  "bill_address": "",
+  "bill_city": "SECHELT",
+  "bill_state": "BRITISH COLUMBIA",
+  "bill_zip": "",
+  "bill_term": "",
+  "bill_acc": "",
+  "scale_name": "",
+  "scale_date_month": "",
+  "scale_date_day": "",
+  "scale_date_year": "",
+  "skidList": [
+    {
+      "pin": "",
+      "scale_length": "71",
+      "scale_width": "42",
+      "scale_height": "",
+      "scale_weight_bol": "308",
+      "scale_weight_rescale": "0"
+    },
+    {
+      "pin": "",
+      "scale_length": "",
+      "scale_width": "",
+      "scale_height": "",
+      "scale_weight_bol": "",
+      "scale_weight_rescale": ""
+    }
+  ],
+  "appointment": "",
+  "instruction": "CHILLIWACK 1 -PERSON SAUNA SHIPPER SIGNATURE NEEDED SHIP EXPRESS LTL SERVICE ONLY",
+  "totalPackage": "1",
+  "customer_pin": "",
+  "customer_po": "",
+  "incoterm": "",
+  "totalSkid": "1"
+}

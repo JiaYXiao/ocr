@@ -1,0 +1,196 @@
+<!-- html for the main form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>form</title>
+  <link rel="stylesheet" type="text/css" href="../css/picbox.css">
+</head>
+<body>
+
+  <!-- image viewer portion on the left side -->
+  <div id="pic-box">
+    <!-- upload button - can't stylize <input type="file"> so a label goes over it -->
+    <label for="getFiles" class="custom-file-upload" id="getFilesLabel">
+      Upload files
+    </label>
+    <input type="file" onchange="startOff(0)" name="client-file" id="getFiles" multiple />
+    <br>
+    <select id="selectList" onchange="updatePic()"></select>
+    <br>
+    <img id="inside-pic" alt="" onclick="swipe()" src = "notSelected.png">
+    <!-- previous/next image buttons-->
+    <br>
+    <button onclick="prevBtn()">Previous</button>
+    <button onclick="nextBtn()">Next</button>
+  </div>
+  <!-- input part on the right side -->
+  <div id="form">
+    <img src="../logo.svg">
+    <form id="basic">
+      <div id="div_1">
+        <p>
+          PRO Number: <input id="id_pro" type="text" name="pronum" size="20" maxlength="17">
+          Date: <input id="id_date_month" type="text" name="month" size="5" maxlength="2" placeholder="MM">
+          /<input id="id_date_day" type="text" name="day" size="5" maxlength="2" placeholder="DD">
+          /<input id="id_date_year" type="text" name="year" size="10" maxlength="4" placeholder="YYYY">
+        </p>
+      </div>
+    </form>
+    <div id="div_2">
+      <form id="contactInfo">
+        <table>
+          <tr>
+            <th>Receiver Information</th>
+            <th>Shipper Information</th>
+          </tr>
+          <tr>
+            <td>
+              Name: <input id="id_recieve_name" type="text" name="name" size="20" maxlength="20"  tabindex=1>
+            </td>
+            <td>
+              Name: <input  id="id_ship_name" type="text" name="name" size="20" maxlength="20">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Address: <input id="id_recieve_address" type="text" name="address" size="30" maxlength="40">
+            </td>
+            <td>
+              Address: <input id="id_ship_address" type="text" name="address" size="30" maxlength="40">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              City: <input id="id_recieve_city" type="text" name="city" size="10" maxlength="20">
+              State: <input id="id_recieve_state" type="text" name="state" size="2" maxlength="4">
+              Zip: <input id="id_recieve_zip" type="text" name="zip" size="6" maxlength="8">
+            </td>
+            <td>
+              City: <input id="id_ship_city" type="text" name="city" size="10" maxlength="20">
+              State: <input id="id_ship_state" type="text" name="state" size="2" maxlength="4">
+              Zip: <input id="id_ship_zip" type="text" name="zip" size="6" maxlength="8">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Tel #: <input id="id_ship_tel" type="text" name="name" size="20" maxlength="20">
+            </td>
+            <td>
+              Tel #: <input id="id_recieve_tel" type="text" name="name" size="20" maxlength="20">
+            </td>
+          </tr>
+
+          <tr>
+            <th>Billing Information   <button id="id_billSame" type="button" onclick = "sameBill()">Same as shipper</button></th>
+          </tr>
+          <tr>
+            <td>
+              Billing Account #:<input id="id_bill_acc" type="text" name="name" size="20" maxlength="20">
+            </td>
+            <td>
+              Name: <input id="id_bill_name" type="text" name="name" size="20" maxlength="20">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Billing Terms:<select id="id_bill_term">
+                <option value=""></option>
+                <option value="prepaid">Prepaid</option>
+                <option value="collect">Collect</option>
+                <option value="noCharge">No Charge</option>
+              </select>
+            </td>
+            <td>
+              Address: <input id="id_bill_address" type="text" name="address">
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              Tel #: <input id="id_recieve_tel" type="text" name="name" size="20" maxlength="20">
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              City: <input id="id_bill_city" type="text" name="city" size="10" maxlength="20">
+              State: <input id="id_bill_state" type="text" name="state" size="2" maxlength="4">
+              Zip: <input id="id_bill_zip" type="text" name="zip" size="6" maxlength="8">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div id="div_3">
+      <form id="report">
+        <table>
+          <tr>
+            <th>
+              Reported Skid Dimensions
+            </th>
+          </tr>
+          <table id="skidTable">
+            <th style="text-align: left">Skid 1 <button type="button" id="r0" onclick="removeSkid(this.id)">Remove Skid</button> </th>
+            <tr>
+              <td>
+                Pin number:<input id="id_pin_0" type="text" name="pinnum" size="20" maxlength="17"></input>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Cube dimensions: L<input id="id_scale_length_0" type="text" name="text4" size="5" maxlength="5" >
+                W<input id="id_scale_width_0" type="text" name="text4" size="5" maxlength="5" >
+                H<input id="id_scale_height_0" type="text" name="text4" size="5" maxlength="5" >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                BOL Weight:<input id="id_scale_weight_bol_0" type="text" name="text4" size="5" maxlength="5" >
+                Rescaled Weight:<input id="id_scale_weight_rescale_0" type="text" name="text4" size="5" maxlength="5" >
+              </td>
+            </tr>
+          </table>
+        </table>
+      </form>
+    </div>
+    <div id="div_4">
+      <form id="addition">
+        <table>
+          <tr>
+            <th>Additional Information</th>
+          </tr>
+          <tr>
+            <td>Special Instruction: <br> <textarea id="id_instruction" name="text5" size="60" maxlength="60"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Customer Reference Number: <input id="id_customer_pin" type="text" name="text1" size="20" maxlength="17">
+              Customer PO Number: <input id="id_customer_po" type="text" name="text1" size="20" maxlength="17">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Total # Packages:<input id="id_totalPackage" type="text" name="text1" size="7" maxlength="7">
+              Total # Skids:<input id="id_totalSkid" type="text" name="text1" size="7" maxlength="7">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <button id="submitBtn" onclick="submit()">Submit</button>
+    <button id="newSkidBtn" onclick="addNewSkid()">Add Skid</button>
+    <!-- end of input part -->
+
+    <!-- add javascript files -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src = "../js/script.js"></script>
+    <script src = "../js/uploadScript.js"></script>
+    <script src = "../js/imgScript.js"></script>
+    <script src = "../js/skid.js"></script>
+    <script src = "../js/endme.js"></script>
+
+  </div>
+</body>
+</html>
