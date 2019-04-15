@@ -1,0 +1,52 @@
+{
+  "proNum": "",
+  "date_day": "",
+  "date_month": "",
+  "date_year": "",
+  "ship_name": "",
+  "ship_address": "",
+  "ship_city": "",
+  "ship_state": "",
+  "ship_zip": "",
+  "recieve_name": "",
+  "recieve_address": "",
+  "recieve_city": "",
+  "recieve_state": "",
+  "recieve_zip": "",
+  "bill_name": "",
+  "bill_address": "",
+  "bill_city": "",
+  "bill_state": "",
+  "bill_zip": "",
+  "bill_term": "",
+  "bill_acc": "",
+  "scale_name": "",
+  "scale_date_month": "",
+  "scale_date_day": "",
+  "scale_date_year": "",
+  "skidList": [
+    {
+      "pin": "",
+      "scale_length": "",
+      "scale_width": "",
+      "scale_height": "",
+      "scale_weight_bol": "",
+      "scale_weight_rescale": ""
+    },
+    {
+      "pin": "",
+      "scale_length": "",
+      "scale_width": "",
+      "scale_height": "",
+      "scale_weight_bol": "",
+      "scale_weight_rescale": ""
+    }
+  ],
+  "appointment": "",
+  "instruction": "",
+  "totalPackage": "",
+  "customer_pin": "",
+  "customer_po": "",
+  "incoterm": "",
+  "totalSkid": ""
+}
