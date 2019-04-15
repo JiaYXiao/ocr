@@ -1,4 +1,14 @@
 //from ibm's documentation
+module.exports = {
+sayHelloInEnglish: function() {
+return "HELLO";
+},
+
+sayHelloInSpanish: function() {
+return "Hola";
+},
+
+ibm: function() {
 var fs = require("fs");
 var request = require("request");
 var Base64 = require('js-base64').Base64;
@@ -31,3 +41,5 @@ request(options, function (error, response, body) {
   console.log(response.body);
   if (error) throw new Error(error);
 });
+}
+};

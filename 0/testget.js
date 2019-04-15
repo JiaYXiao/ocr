@@ -5,7 +5,7 @@ var Base64 = require('js-base64').Base64;
 var encoding = Base64.encode('tasha.xiao@purolator.com:Jpg323947408!');
 var options = {
   method: 'GET',
-  url: 'https://purolator-poc.bpm.ibmcloud.com/backendbaca-purolator/ca/rest/content/v1/contentAnalyzer/88ce0250-5c8c-11e9-b790-09b27a967cd8/json',
+  url: 'https://purolator-poc.bpm.ibmcloud.com/backendbaca-purolator/ca/rest/content/v1/contentAnalyzer/ba11df10-5f95-11e9-b790-09b27a967cd8/json',
   headers:
   {
     'apiKey' : '021c6c7e-606c-42c0-85d2-3a300a7fc9b9',

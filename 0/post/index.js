@@ -10,14 +10,16 @@ var fs = require('fs');
 
 ///console.log(KVP);
 
-/* cutoff_KVP() - purpose?
- * @param KVP - what the heckie
- * @return - ??????
+/* cutoff_KVP() - removes the baca-created kvps that are not declared in ontology
+ * @param KVP - the KVPTable of the read-in json
+ * @return - the edited KVP array
  */
 function cutoff_KVP(KVP){
   var length = KVP.length;
   var count;
+  //finds the number of created kvps declared in ontology
   for(var i =0;i < length; i++){
+    //break the loop if it starts to introduce self-created kvps
      if(KVP[i].KeyClass == ""){
        count = i;
        break;
