@@ -1,1 +1,1 @@
-{"status":{"code":202,"messageId":"CIWCA12001","message":"Content Analyzer request was created"},"data":{"message":"json,pdf,utf8 processing request was created successful","fileNameIn":"test.tif","analyzerId":"2459b820-5f9b-11e9-b790-09b27a967cd8","type":["json","pdf","utf8"]}}
+{"status":{"code":202,"messageId":"CIWCA12001","message":"Content Analyzer request was created"},"data":{"message":"json,pdf,utf8 processing request was created successful","fileNameIn":"test.tif","analyzerId":"8c0f5f80-5f9e-11e9-aa24-a55b1ed9b9f8","type":["json","pdf","utf8"]}}
